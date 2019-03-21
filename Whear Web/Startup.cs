@@ -2,8 +2,10 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Whear.Web.Data;
 
 namespace Whear.Web
 {
@@ -52,7 +54,10 @@ namespace Whear.Web
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            // Initializes the database upon execution.
+            services.AddDbContext<Context>(options =>
+                options.UseMySQL(Configuration.GetConnectionString("Default")));
+            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
     }
