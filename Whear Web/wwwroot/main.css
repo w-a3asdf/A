@@ -1,5 +1,72 @@
-﻿/* Body */
-#b {
-    font: normal 14px sans-serif;
+﻿/* Heading 1, Body */
+.h1, .p, #b {
     margin: 0;
+}
+
+/* Container */
+.c {
+    margin: 0 auto;
+    max-width: 95%;
+    width: 1280px;
+}
+
+/* Column ((1/3)%) */
+.c1-3 {
+    float: left;
+    width: 33.33%;
+}
+
+/* Column (50%) */
+.c5 {
+    float: left;
+    width: 50%;
+}
+
+/* Main > Box */
+.b {
+    margin: 6px;
+}
+
+/* Main > Box > Frame */
+.f {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+/* Main > Box > Frame > Heading 1 */
+.h1 {
+    font-weight: normal;
+}
+
+/* Main > Box > Frame > Paragraph */
+.p {
+    margin-top: 14px;
+}
+
+/* Body */
+#b {
+    background: #eee;
+    font: normal 14px sans-serif;
+}
+
+/* Header */
+#h {
+    background: #999;
+    height: 64px;
+    position: fixed;
+    width: 100%;
+}
+
+/* Header > Logo */
+#l {
+    background: #777;
+    height: 42px;
+    margin: 11px 0 11px 7px;
+    width: 180px;
+}
+
+/* Main */
+#m {
+    padding-top: 73px;
 }

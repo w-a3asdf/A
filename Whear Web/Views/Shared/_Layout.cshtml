@@ -17,7 +17,15 @@
     </head>
 
     <body id="b">
-        @RenderBody()
+        <header id="h">
+            <div class="c">
+                <div id="l"></div>
+            </div>
+        </header>
+
+        <main class="c" id="m">
+            @RenderBody()
+        </main>
 
         <environment exclude="Development">
             <script src="~/m.js"></script>
